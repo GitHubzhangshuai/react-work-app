@@ -19,8 +19,6 @@ export function chat(state=initState,action){
             return {...state,chatmsg:action.payload.msgs,users:action.payload.users,unread:action.payload.msgs.filter(v=>!v.read&&v.to===action.payload.userid).length}
         case MSG_RECV:
             const n = action.payload.to===action.userid?1:0
-            console.log(action.userid)
-            console.log(action.payload.to)
             return {...state,chatmsg: [...state.chatmsg,action.payload],unread:state.unread+n}
         case MSG_READ:
             const {from,num} = action.payload
@@ -67,7 +65,9 @@ export function recvMsg(){
     return (dispatch,getState) => {
         socket.on('recvmsg',function(data){
             const userid = getState().user._id
-            dispatch(msgRecv(data,userid))
+            if(data.from===userid||data.to===userid){
+                dispatch(msgRecv(data,userid))
+            }
         })
     }
 }

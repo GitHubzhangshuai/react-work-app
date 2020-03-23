@@ -10,11 +10,11 @@ import {withRouter} from 'react-router-dom'
 )
 class AuthRoute extends React.Component{
     componentDidMount(){
-        const publicList = ['/login','/register']
-        const pathName = this.props.location.pathname
-        if(publicList.indexOf(pathName)>-1){
-            return null
-        }
+        // const publicList = ['/login','/register']
+        // const pathName = this.props.location.pathname
+        // if(publicList.indexOf(pathName)>-1){
+        //     return null
+        // }
         axios.get('/user/info').then((res) => {
             if(res.status === 200){
                 if(res.data.code === 0){

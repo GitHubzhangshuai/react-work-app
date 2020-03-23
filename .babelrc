@@ -1,0 +1,26 @@
+{
+    "presets": [
+      ["react-app",
+        {
+          "targets":{
+            "chrome": "58",
+            "ie": "11"
+          }
+        }]
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ],
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ]
+    ]
+}

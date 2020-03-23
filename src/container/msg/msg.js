@@ -34,6 +34,7 @@ class Msg extends React.Component{
                 const unreadUum = v.filter(v => !v.read&&v.to===userid).length
                 const name = userinfo[targetId]&&userinfo[targetId].name
                 const avatar = userinfo[targetId]&&userinfo[targetId].avatar
+                console.log(v)
                 return (
                     <List key={lastItem._id}>
                         <Item 

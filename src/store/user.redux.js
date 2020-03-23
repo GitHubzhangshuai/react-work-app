@@ -7,7 +7,7 @@ const LOAD_DATA = 'LOAD_DATA'
 const LOGOUT = 'LOGOUT'
 
 const initState = {
-    redirectTo: '',
+    redirectTo: '/login',
     msg: '',
     user: '',
     pwd: '',
@@ -19,7 +19,7 @@ export function user(state=initState,action){
         case AUTH_SUCCESS:
             return {...state,msg: '',redirectTo: getRedirectPath(action.payload),...action.payload}
         case LOAD_DATA:
-            return {...state,...action.payload}
+            return {...state,redirectTo: getRedirectPath(action.payload),...action.payload}
         case LOGOUT:
             return {...initState,redirectTo: '/login'}
         case ERROR_MSG:

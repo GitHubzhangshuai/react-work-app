@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import { NavBar } from 'antd-mobile'
-import {Switch,Route,Redirect} from 'react-router-dom'
+import {Route,Redirect} from 'react-router-dom'
 import NavLinkBar from '../navlink/navlink'
 import Boss from '../../container/boss/boss'
 import Genius from '../../container/genius/genius'
@@ -57,14 +57,14 @@ class Dashboard extends React.Component{
                 component: User
             }
         ]
-        const page = navList.find(v=>v.path===pathname)
+        const page = navList.find(v=>v.path===pathname)?navList.find(v=>v.path===pathname):navList[navList.length-1]
         return (
             <div>
                 {this.props.redirectTo?<Redirect to={this.props.redirectTo}></Redirect>:null}
-                <NavBar mode="card">{navList.find(v=>v.path===pathname)?navList.find(v=>v.path===pathname).title:null}</NavBar>
+                <NavBar mode="card">{page.title}</NavBar>
                 <div style={{marginTop:45}}>
                     <QueueAnim duration={800} type="scaleX">
-                        <Route key={page.path} path={page.path} component={page.component}></Route>
+                        <Route key={page.path} path={pathname} component={page.component}></Route>
                     </QueueAnim>
                 </div>
                 <NavLinkBar data={navList}></NavLinkBar>

@@ -15,7 +15,6 @@ class User extends React.Component{
         this.logout = this.logout.bind(this)
     }
     logout(){
-        console.log(1)
         const alert = Modal.alert
         alert('注销','确认退出登录吗',[
             {text: 'Cancel',onPress: ()=> {}},
@@ -30,7 +29,6 @@ class User extends React.Component{
         const props = this.props
         const Item = List.Item
         const Brief = Item.Brief
-        console.log(props)
         return props.user?(
             <div>
                 <Result 
@@ -39,7 +37,7 @@ class User extends React.Component{
                 message={props.type==='boss'?props.company:null}
                 </Result>
                 <List renderHeader={
-                    () => '简介'
+                    () => <span>{props.user}{props.type==='boss'?(<span>(身份:老板)</span>):(<span>(身份:牛人)</span>)}</span>
                 }>
                     <Item>
                         {props.title} 

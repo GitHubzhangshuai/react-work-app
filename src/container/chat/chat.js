@@ -31,6 +31,7 @@ class Chat extends React.Component{
             this.props.getMsgList()
             this.props.recvMsg()
         }
+        this.scrollInit()
     }
     componentWillUnmount(){
         const to = this.props.match.params.user
@@ -47,7 +48,8 @@ class Chat extends React.Component{
         const msg = this.state.text
         this.props.sendMsg({from,to,msg})
         this.setState({
-            text: ''
+            text: '',
+            bodyDOm: null
         })
     }
     toggleEmoji(){
@@ -55,6 +57,14 @@ class Chat extends React.Component{
             showEmoji: !this.state.showEmoji
         })
         this.fixCarousel()
+    }
+    scrollInit(){
+        if(this.refs.bodyChat){
+            this.refs.bodyChat.scrollTo(0, this.refs.bodyChat.scrollHeight)
+        }
+    }
+    componentDidUpdate(){
+        this.scrollInit()
     }
     render(){
         const userid = this.props.match.params.user
@@ -75,8 +85,8 @@ class Chat extends React.Component{
             }}>
                 {users[userid].name}
             </NavBar>
-            <div className="chat-body">
-                <QueueAnim type='scale' delay={100}>
+            <div className="chat-body" ref="bodyChat">
+                <QueueAnim type='scale' delay={100} onEnd={() => this.scrollInit()}>
                     {chatmsgs.map(v => {
                         const avatar = require(`./img/${users[v.from].avatar}.png`)
                         return v.from===userid?(
@@ -102,6 +112,7 @@ class Chat extends React.Component{
                     onChange={v=>{
                         this.setState({text:v})
                     }}
+                    onKeyUp={(e)=>{if(e.keyCode === 13) {this.handleSubmit()}}}
                     extra={
                         <div>
                             <span onClick={() => {

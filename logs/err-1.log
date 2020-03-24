@@ -10723,3 +10723,243 @@ SyntaxError: Cannot use import statement outside a module
     at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
     at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
     at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)
+D:\react教程\Redux+React Router+Node.js全栈开发\react-work-app\server\server.js:3
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:983:16)
+    at Module._compile (internal/modules/cjs/loader.js:1033:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\ProcessContainer.js:301:25
+    at wrapper (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\USERS\18025\APPDATA\ROAMING\NPM\node_modules\pm2\lib\Utility.js:186:13)

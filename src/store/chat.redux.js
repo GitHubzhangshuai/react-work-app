@@ -1,6 +1,6 @@
 import axios from 'axios'
 import io from 'socket.io-client'
-const socket = io('ws://localhost:9093')
+const socket = io('ws://47.95.4.125:9093')
 
 const MSG_LIST = 'MSG_LIST'
 const MSG_READ = 'MSG_READ'
@@ -11,6 +11,12 @@ const initState = {
     users: {},
     unread: 0
 }
+socket.on('connect',function(){
+    console.log('connect')
+})
+socket.on('disconnect',function(){
+    console.log('disconnect')
+})
 
 
 export function chat(state=initState,action){
@@ -57,7 +63,9 @@ export function getMsgList(){
 
 export function sendMsg({from,to,msg}){
     return dispatch => {
+        alert(socket)
         socket.emit('sendmsg',{from,to,msg})
+        alert(msg)
     }
 }
 

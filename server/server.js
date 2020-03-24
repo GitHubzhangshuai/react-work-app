@@ -8,6 +8,7 @@ import http from 'http'
 import socket from 'socket.io'
 import model from './model'
 import React from 'react'
+import crypto from 'crypto'
 import {renderToString} from 'react-dom/server'
 import csshook from 'css-modules-require-hook/preset'
 import assethook from 'asset-require-hook'
@@ -29,13 +30,23 @@ const io = socket(server)
 const Chat = model.getModel('chat')
 
 io.on('connection',function(socket){
+    console.log('connection')
+    var key = Math.random()*1000
+    key = crypto.createHash("sha1").update(key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").digest("base64");
+    var headers = [
+        'HTTP/1.1 101 Switching Protocols',
+        'Upgrade: websocket',
+        'Connection: Upgrade',
+        'Sec-WebSocket-Accept: ' + key
+    ];
+    socket.write(headers.join("\r\n") + "\r\n\r", 'ascii');
     socket.on('sendmsg',function(data){
         const {from,to,msg} = data
+        console.log(msg)
         const chatid = [from,to].sort().join('_')
         Chat.create({chatid,from,to,content:msg},function(err,doc){
             io.emit('recvmsg',Object.assign({},doc._doc))
         })
-        console.log(data)
     })
 })
 

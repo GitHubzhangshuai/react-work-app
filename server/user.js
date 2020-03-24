@@ -47,7 +47,6 @@ Router.post('/login',function(req,res){
 Router.get('/info',function(req,res,next){
     const {userid} = req.cookies
     if(!userid){
-        console.log(userid)
         return res.json({code:1})
     }
     User.findOne({_id:userid},_filter,function(err,doc){
@@ -77,7 +76,6 @@ Router.post('/update',function(req,res){
 
 Router.get('/getmsglist',function(req,res){
     const user = req.cookies.userid
-    console.log(user)
     User.find({},function(e,userdoc){
         let users = {}
         userdoc.forEach(v=>{

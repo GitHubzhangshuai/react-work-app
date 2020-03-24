@@ -8,7 +8,7 @@
 * 即时通讯:socket.io-client
 ```
 npm start
-localhost:3000
+浏览器打开localhost:3000
 ```
 
 ## 后台技术栈
@@ -19,6 +19,12 @@ localhost:3000
 * 模板引擎:无(由于是前后端分离)
 ```
 npm run server
+运行在本地的9093端口
+(
+src/store/char.redux.js下
+const socket = io('ws://47.95.4.125:9093')
+要改成自己的地址
+)
 ```
 
 ## 服务器渲染
@@ -27,10 +33,11 @@ npm run server
 * 处理css问题: css-modules-require-hook
 * 处理图片问题: asset-require-hook
 * 执行编译器: babel-node
+* 日志管理&&进程守护:pm2
 ```
 npm run build
 npm run server
-localhost:9093
+浏览器输入即可localhost:9093
 ```
 
 

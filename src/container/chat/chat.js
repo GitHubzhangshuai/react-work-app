@@ -27,11 +27,6 @@ class Chat extends React.Component{
             ,'😁', '🤣','😀', '😁', '🤣','😀', '😁', '🤣','😀', '😁', '🤣']
         this.setState({emojis:emojis.map(emoji => ({text: emoji}))})
         this.fixCarousel()
-        if(!this.props.chat.chatmsg.length){
-            console.log('socket init')
-            this.props.getMsgList()
-            this.props.recvMsg()
-        }
         this.scrollInit()
     }
     componentWillUnmount(){
@@ -98,10 +93,12 @@ class Chat extends React.Component{
             <div className="chat-body" ref="bodyChat">
                 <QueueAnim type='scale' delay={100} onEnd={() => this.scrollInit()}>
                     {chatmsgs.map(v => {
-                        const avatar = require(`./img/${users[v.from].avatar}.png`)
+                        const avatar = users[v.from]?require(`./img/${users[v.from].avatar}.png`):null
                         return v.from===userid?(
                             <List key={v._id}>
-                                <Item thumb={avatar}>{v.content}</Item>
+                                {avatar?(
+                                    <Item thumb={avatar}>{v.content}</Item>
+                                ):null}
                             </List>
                         ):(
                             <List key={v._id}>

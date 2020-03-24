@@ -16,11 +16,11 @@ import QueueAnim from 'rc-queue-anim'
 )
 class Dashboard extends React.Component{
     componentDidMount(){
-        if(!this.props.chat.chatmsg.length){
-            console.log('socket init')
-            this.props.getMsgList()
-            this.props.recvMsg()
-        }
+        // if(!this.props.chat.chatmsg.length){
+        //     console.log('socket init')
+        //     this.props.getMsgList()
+        //     this.props.recvMsg()
+        // }
     }
     render(){
         const user = this.props.user

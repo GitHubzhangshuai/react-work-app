@@ -27,13 +27,14 @@ class Msg extends React.Component{
         const userid = this.props.user._id
         const userinfo = this.props.chat.users
         return (
-            <div>
+            <div className="page-content">
             {chatList.map(v => {
                 const lastItem = this.getLast(v)
                 const targetId = v[0].from === userid?v[0].to:v[0].from
                 const unreadUum = v.filter(v => !v.read&&v.to===userid).length
                 const name = userinfo[targetId]&&userinfo[targetId].name
-                const avatar = userinfo[targetId]&&userinfo[targetId].avatar
+                let avatar = userinfo[targetId]&&userinfo[targetId].avatar
+                avatar = avatar?avatar:'boy'
                 console.log(v)
                 return (
                     <List key={lastItem._id}>

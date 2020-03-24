@@ -1,10 +1,13 @@
 import axios from 'axios'
 import io from 'socket.io-client'
 const socket = io('ws://47.95.4.125:9093')
+// const socket = io('ws://localhost:9093')
 
 const MSG_LIST = 'MSG_LIST'
 const MSG_READ = 'MSG_READ'
 const MSG_RECV = 'MSG_RECV'
+
+let havaInit = false
 
 const initState = {
     chatmsg: [],
@@ -63,9 +66,7 @@ export function getMsgList(){
 
 export function sendMsg({from,to,msg}){
     return dispatch => {
-        alert(socket)
         socket.emit('sendmsg',{from,to,msg})
-        alert(msg)
     }
 }
 

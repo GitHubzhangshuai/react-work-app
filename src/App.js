@@ -8,8 +8,22 @@ import Login from './container/login/login'
 import Register from './container/register/register'
 import Dashboard from './component/dashboard/dashboard'
 import './App.css';
+import {connect} from 'react-redux'
+import {getMsgList,recvMsg} from './store/chat.redux'
 
+
+@connect(
+  state => state,
+  {getMsgList,recvMsg}
+)
 class App extends React.Component{
+  componentDidMount(){
+      if(!this.props.chat.chatmsg.length){
+        console.log('socket init')
+        this.props.getMsgList()
+        this.props.recvMsg()
+    }
+  }
   render(){
     return (
       <div>

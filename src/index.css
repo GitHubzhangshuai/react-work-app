@@ -35,6 +35,14 @@
 #chat-page .am-grid-text{
 	margin-top:0;
 }
+.page-content{
+	overflow-y: auto;
+	position: fixed;
+	left:0;
+	right:0;
+	top:50px;
+	bottom:50px;
+}
 .chat-body{
 	overflow-y: auto;
 	position: fixed;

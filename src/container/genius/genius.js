@@ -17,7 +17,9 @@ class Genius extends React.Component{
     }
     render(){
         return(
-            <UserCard userList={this.props.userList}></UserCard>
+            <div className="page-content">
+                <UserCard userList={this.props.userList}></UserCard>
+            </div>
         )
     }
 }

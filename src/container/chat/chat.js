@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import {getMsgList,sendMsg,recvMsg,readMsg} from '../../store/chat.redux'
 import QueueAnim from 'rc-queue-anim'
 
+
 @connect(
     state => state,
     {getMsgList,sendMsg,recvMsg,readMsg}
@@ -63,6 +64,15 @@ class Chat extends React.Component{
             this.refs.bodyChat.scrollTo(0, this.refs.bodyChat.scrollHeight)
         }
     }
+    handleFocus(){
+        this.refs.stickFooter.style['position'] = 'absolute'
+        let n = '100'
+        this.refs.stickFooter.style['bottom'] = n+'px'
+    }
+    handleBlur(){
+        this.refs.stickFooter.style['position'] = 'fixed'
+        this.refs.stickFooter.style['bottom'] = '0'
+    }
     componentDidUpdate(){
         this.scrollInit()
     }
@@ -104,11 +114,13 @@ class Chat extends React.Component{
                     })}
                 </QueueAnim>
             </div>
-            <div className="stick-footer">
+            <div className="stick-footer" ref="stickFooter">
                 <List>
                     <InputItem 
                     placeholder="请输入"
                     value={this.state.text}
+                    onFocus={this.handleFocus.bind(this)}
+                    onBlur={this.handleBlur.bind(this)}
                     onChange={v=>{
                         this.setState({text:v})
                     }}

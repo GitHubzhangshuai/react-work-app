@@ -5,13 +5,13 @@ import {loadData} from '../../store/user.redux'
 import {withRouter} from 'react-router-dom'
 @withRouter
 @connect(
-    null,
+    state => state.user,
     {loadData}
 )
 class AuthRoute extends React.Component{
     componentDidMount(){
         // const publicList = ['/login','/register']
-        // const pathName = this.props.location.pathname
+        const pathName = this.props.location.pathname
         // if(publicList.indexOf(pathName)>-1){
         //     return null
         // }
@@ -21,7 +21,11 @@ class AuthRoute extends React.Component{
                     // 有登录信息
                     this.props.loadData(res.data.data)
                 }else{
-                    this.props.history.push('/login')
+                    if(pathName==='/register'){
+                        this.props.history.push('/register')
+                    }else{
+                        this.props.history.push('/login')
+                    }
                 }
             }
         })

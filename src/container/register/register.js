@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../../component/logo/logo'
-import Authroute from '../../component/authroute/authroute'
 import {List,Button,Radio,WhiteSpace,WingBlank,InputItem} from 'antd-mobile'
 import {connect} from 'react-redux'
 import '../../index.css'
@@ -33,11 +32,10 @@ class Register extends React.Component{
         return (
             <div>
                 {this.props.redirectTo&&this.props.redirectTo!=='/register'?<Redirect to={this.props.redirectTo}></Redirect>:null}
-                <Authroute></Authroute>
                 <Logo/>
                 <h2>注册</h2>
                 <List>
-        {this.props.msg?<p className="error-msg">{this.props.msg}</p>:''}
+                    {this.props.msg?<p className="error-msg">{this.props.msg}</p>:''}
                     <InputItem onChange={v => this.props.handleChange('user',v)}>用户名</InputItem>
                     <InputItem onChange={v => this.props.handleChange('pwd',v)}>密码</InputItem>
                     <InputItem onChange={v => this.props.handleChange('repeatpwd',v)}>确认密码</InputItem>

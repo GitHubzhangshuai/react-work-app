@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../../component/logo/logo'
-import Authroute from '../../component/authroute/authroute'
 import {List,Button,WhiteSpace,WingBlank,InputItem} from 'antd-mobile'
 import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
@@ -27,10 +26,10 @@ class Login extends React.Component{
     render(){
         return (
             <div>
-                <Authroute></Authroute>
                 {this.props.redirectTo&&this.props.redirectTo!=='/login'?<Redirect to={this.props.redirectTo}></Redirect>:null}
                 <Logo/>
                 <h2>登录</h2>
+                {this.props.msg?<p className="error-msg">{this.props.msg}</p>:''}
                 <List>
                     <InputItem onChange={v => this.props.handleChange('user',v)}>用户</InputItem>
                     <WhiteSpace></WhiteSpace>

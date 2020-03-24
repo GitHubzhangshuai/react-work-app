@@ -8,7 +8,7 @@ import http from 'http'
 import socket from 'socket.io'
 import model from './model'
 import React from 'react'
-import {renderToString,renderToStaticMarkup} from 'react-dom/server'
+import {renderToString} from 'react-dom/server'
 import csshook from 'css-modules-require-hook/preset'
 import assethook from 'asset-require-hook'
 assethook({
@@ -22,7 +22,6 @@ import thunk from 'redux-thunk'
 import { createStore,applyMiddleware,compose } from 'redux'
 import reducer from '../src/store/reducer'
 import staticPath from '../build/asset-manifest.json'
-console.log(staticPath)
 
 const app = express()
 const server = http.Server(app)
@@ -81,19 +80,20 @@ app.use(function(req,res,next){
         '/genius': '大神页面',
         '/me': '用户中心'
     }
+    const author = '张帅'
     const description = obj[req.url]?obj[req.url]:'react-ssr即时通讯"'
     const pageHtml = `
     <!DOCTYPE html>
     <html lang="en">
         <head>
             <meta charset="utf-8" />
-            <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+            <link rel="icon" href="/static/favicon.ico" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#000000" />
             <meta name=""keywords" content="React,redux,ssr,websocket"/>
-            <meta name="author" content="张帅"/>
+            <meta name="author" content="${author}"/>
             <meta name="description" content="${description}"/>
-            <title>React App</title>
+            <title>${description}</title>
             ${strCss}
         </head>
         <body>
